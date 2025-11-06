@@ -1,4 +1,4 @@
-import { Cursor } from "@/components/ui/inverted-cursor";
+import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
 import { Services } from "@/components/Services";
 import { Authority } from "@/components/Authority";
@@ -10,14 +10,16 @@ import { Footer } from "@/components/Footer";
 const Index = () => {
   return (
     <div className="min-h-screen">
-      <Cursor />
-      <Hero />
-      <Services />
-      <Authority />
-      <Benefits />
-      <Process />
-      <CTA />
-      <Footer />
+      <Header />
+      <div className="pt-20">
+        <Hero />
+        <Services />
+        <Authority />
+        <Benefits />
+        <Process />
+        <CTA />
+        <Footer />
+      </div>
     </div>
   );
 };
