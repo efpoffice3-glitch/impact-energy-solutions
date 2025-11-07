@@ -46,7 +46,7 @@ export const Hero = () => {
           <img src={logo} alt="Impacto Lazer" className="h-24 w-auto drop-shadow-2xl" />
         </div>
         
-        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 animate-fade-in leading-tight drop-shadow-2xl">
+        <h1 className="text-[30px] md:text-5xl lg:text-6xl font-bold text-white mb-6 animate-fade-in leading-tight drop-shadow-2xl">
           Soluções completas em aquecimento,<br />
           <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
             energia e conforto
@@ -89,7 +89,7 @@ export const Hero = () => {
           <Button 
             size="lg" 
             variant="outline"
-            className="text-lg px-8 py-6 border-2 hover:bg-accent/10"
+            className="text-lg px-8 py-6 border-2 border-white/80 text-white hover:bg-white hover:text-primary transition-all duration-300"
             onClick={scrollToServices}
           >
             Conhecer nossas soluções
