@@ -2,6 +2,7 @@ import { SparklesCore } from "@/components/ui/sparkles";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Phone } from "lucide-react";
 import logo from "@/assets/logo.jpg";
+import heroBackground from "@/assets/hero-background.jpg";
 
 export const Hero = () => {
   const handleWhatsApp = () => {
@@ -13,28 +14,39 @@ export const Hero = () => {
   };
 
   return (
-    <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden bg-gradient-to-br from-background via-background to-accent/5">
+    <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden">
+      {/* Background Image */}
+      <div className="absolute inset-0 w-full h-full">
+        <img 
+          src={heroBackground} 
+          alt="Piscina aquecida ao pôr do sol" 
+          className="w-full h-full object-cover"
+        />
+      </div>
+      
+      {/* Dark overlay for better text readability */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-background/95" />
+      
+      {/* Sparkles effect */}
       <div className="absolute inset-0 w-full h-full">
         <SparklesCore
           id="hero-sparkles"
           background="transparent"
           minSize={0.4}
           maxSize={1.2}
-          particleDensity={80}
+          particleDensity={50}
           className="w-full h-full"
           particleColor="hsl(200, 85%, 45%)"
           speed={0.5}
         />
       </div>
       
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-background/50 to-background" />
-      
       <div className="container mx-auto px-4 relative z-10 text-center">
         <div className="mb-8 flex justify-center animate-fade-in">
-          <img src={logo} alt="Impacto Lazer" className="h-24 w-auto" />
+          <img src={logo} alt="Impacto Lazer" className="h-24 w-auto drop-shadow-2xl" />
         </div>
         
-        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6 animate-fade-in leading-tight">
+        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 animate-fade-in leading-tight drop-shadow-2xl">
           Soluções completas em aquecimento,<br />
           <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
             energia e conforto
@@ -42,7 +54,7 @@ export const Hero = () => {
           <br />para grandes demandas
         </h1>
         
-        <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-3xl mx-auto animate-fade-in">
+        <p className="text-lg md:text-xl text-white/90 mb-8 max-w-3xl mx-auto animate-fade-in drop-shadow-lg">
           Projetos, fornecimento, instalação, automação e homologação junto à concessionária — tudo em um só lugar.
         </p>
         

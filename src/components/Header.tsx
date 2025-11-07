@@ -9,7 +9,7 @@ export const Header = () => {
 
   const menuItems = [
     { path: "/", label: "Home" },
-    { path: "/quem-somos", label: "Quem Somos" },
+    { path: "/#quem-somos", label: "Quem Somos" },
     { path: "/central-termica", label: "Central Térmica" },
     { path: "/equipamentos-piscina", label: "Equipamentos de Piscina" },
     { path: "/aquecedores-piscina", label: "Aquecedores de Piscina" },
