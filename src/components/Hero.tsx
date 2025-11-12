@@ -3,25 +3,19 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Phone } from "lucide-react";
 import logo from "@/assets/logo.png";
 import heroBackground from "@/assets/hero-background.jpg";
-
 export const Hero = () => {
   const handleWhatsApp = () => {
     window.open("https://wa.me/5511999999999?text=Olá, gostaria de solicitar um orçamento técnico", "_blank");
   };
-
   const scrollToServices = () => {
-    document.getElementById("services")?.scrollIntoView({ behavior: "smooth" });
+    document.getElementById("services")?.scrollIntoView({
+      behavior: "smooth"
+    });
   };
-
-  return (
-    <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden">
+  return <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0 w-full h-full">
-        <img 
-          src={heroBackground} 
-          alt="Piscina aquecida ao pôr do sol" 
-          className="w-full h-full object-cover"
-        />
+        <img src={heroBackground} alt="Piscina aquecida ao pôr do sol" className="w-full h-full object-cover" />
       </div>
       
       {/* Dark overlay for better text readability */}
@@ -29,21 +23,12 @@ export const Hero = () => {
       
       {/* Sparkles effect */}
       <div className="absolute inset-0 w-full h-full">
-        <SparklesCore
-          id="hero-sparkles"
-          background="transparent"
-          minSize={0.4}
-          maxSize={1.2}
-          particleDensity={50}
-          className="w-full h-full"
-          particleColor="hsl(200, 85%, 45%)"
-          speed={0.5}
-        />
+        <SparklesCore id="hero-sparkles" background="transparent" minSize={0.4} maxSize={1.2} particleDensity={50} className="w-full h-full" particleColor="hsl(200, 85%, 45%)" speed={0.5} />
       </div>
       
       <div className="container mx-auto px-4 relative z-10 text-center">
         <div className="mb-8 flex justify-center animate-fade-in">
-          <img src={logo} alt="Impacto Lazer" className="h-40 md:h-48 w-auto drop-shadow-2xl" />
+          
         </div>
         
         <h1 className="text-[30px] md:text-5xl lg:text-6xl font-bold text-white mb-6 animate-fade-in leading-tight drop-shadow-2xl">
@@ -78,20 +63,11 @@ export const Hero = () => {
         </div>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in">
-          <Button 
-            size="lg" 
-            className="text-lg px-8 py-6 bg-gradient-to-r from-primary to-primary/90 hover:from-primary/90 hover:to-primary shadow-lg hover:shadow-xl transition-all"
-            onClick={handleWhatsApp}
-          >
+          <Button size="lg" className="text-lg px-8 py-6 bg-gradient-to-r from-primary to-primary/90 hover:from-primary/90 hover:to-primary shadow-lg hover:shadow-xl transition-all" onClick={handleWhatsApp}>
             <Phone className="mr-2 h-5 w-5" />
             Solicitar orçamento técnico
           </Button>
-          <Button 
-            size="lg" 
-            variant="outline"
-            className="text-lg px-8 py-6 border-2 border-white/80 text-white hover:bg-white hover:text-primary transition-all duration-300"
-            onClick={scrollToServices}
-          >
+          <Button size="lg" variant="outline" className="text-lg px-8 py-6 border-2 border-white/80 text-white hover:bg-white hover:text-primary transition-all duration-300" onClick={scrollToServices}>
             Conhecer nossas soluções
             <ArrowRight className="ml-2 h-5 w-5" />
           </Button>
@@ -99,6 +75,5 @@ export const Hero = () => {
       </div>
       
       <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent" />
-    </section>
-  );
+    </section>;
 };
