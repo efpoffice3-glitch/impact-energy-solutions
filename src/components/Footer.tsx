@@ -1,4 +1,4 @@
-import logo from "@/assets/logo.jpg";
+import logo from "@/assets/logo.png";
 import { Mail, Phone, MapPin } from "lucide-react";
 
 export const Footer = () => {
@@ -7,7 +7,7 @@ export const Footer = () => {
       <div className="container mx-auto">
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           <div>
-            <img src={logo} alt="Impacto Lazer" className="h-16 w-auto mb-4" />
+            <img src={logo} alt="Impacto Lazer" className="h-20 w-auto mb-4" />
             <p className="text-sm text-muted-foreground">
               Soluções completas em aquecimento, energia e conforto para grandes demandas.
             </p>

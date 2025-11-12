@@ -1,7 +1,7 @@
 import { SparklesCore } from "@/components/ui/sparkles";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Phone } from "lucide-react";
-import logo from "@/assets/logo.jpg";
+import logo from "@/assets/logo.png";
 import heroBackground from "@/assets/hero-background.jpg";
 
 export const Hero = () => {
@@ -43,7 +43,7 @@ export const Hero = () => {
       
       <div className="container mx-auto px-4 relative z-10 text-center">
         <div className="mb-8 flex justify-center animate-fade-in">
-          <img src={logo} alt="Impacto Lazer" className="h-24 w-auto drop-shadow-2xl" />
+          <img src={logo} alt="Impacto Lazer" className="h-32 w-auto drop-shadow-2xl" />
         </div>
         
         <h1 className="text-[30px] md:text-5xl lg:text-6xl font-bold text-white mb-6 animate-fade-in leading-tight drop-shadow-2xl">

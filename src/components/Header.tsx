@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Menu, X, ChevronDown, Phone } from "lucide-react";
 import { NavLink } from "@/components/NavLink";
-import logo from "@/assets/logo.jpg";
+import logo from "@/assets/logo.png";
 
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -17,7 +17,7 @@ export const Header = () => {
       <nav className="container mx-auto px-4 py-3">
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center gap-3">
-            <img src={logo} alt="Impacto Lazer" className="h-12 w-auto" />
+            <img src={logo} alt="Impacto Lazer" className="h-16 w-auto" />
             <span className="text-xl font-bold text-primary">Impacto Lazer</span>
           </Link>
 
