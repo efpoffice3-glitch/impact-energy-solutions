@@ -67,7 +67,7 @@ export const Hero = () => {
             <Phone className="mr-2 h-5 w-5" />
             Solicitar orçamento técnico
           </Button>
-          <Button size="lg" variant="outline" className="text-lg px-8 py-6 border-2 border-white/80 text-white hover:bg-white hover:text-primary transition-all duration-300" onClick={scrollToServices}>
+          <Button size="lg" variant="outline" className="text-lg px-8 py-6 border-2 border-white/80 text-secondary hover:bg-white hover:text-primary transition-all duration-300" onClick={scrollToServices}>
             Conhecer nossas soluções
             <ArrowRight className="ml-2 h-5 w-5" />
           </Button>
